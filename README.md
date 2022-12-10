@@ -1,2 +1,2 @@
-# trail-1
+# Colours Game 
 demo
