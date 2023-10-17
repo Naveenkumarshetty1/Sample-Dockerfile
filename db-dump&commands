@@ -1,0 +1,50 @@
+mysql -u root -p 
+SHOW DATABASES; 
+mysqldump -u root -p sringboot > springboot_backup.sql 
+Mysqldump –u root –p humana_blog > humana_blog-backup.sql 
+
+cat wp-config.php 
+
+[For zip] 
+
+zip zudio_sql_backup.zip zudio.sql 
+
+zip -r humana-blog.zip /mnt/data/humana-blog 
+
+ 
+[Copy from ec2 to local] 
+sudo scp -i vfxsummit.pem ubuntu@54.213.23.33:/var/www/html/desitoons_backup.zip /home/naveengummadishetty 
+
+https://repost.aws/knowledge-center/share-ebs-volume 
+
+ 
+If volume unmounted  
+ 
+
+mount -a 
+
+fdisk -l 
+
+df –h 
+
+ blkid 
+
+ mount /dev/nvme1n1 /mnt/data/ 
+
+ df -h 
+
+ ls /mnt/data/ 
+
+ lsblk 
+
+ vim /etc/fstab  
+
+ mount -a 
+
+ df –h 
+
+
+
+sudo du -h --max-depth=1 / | sort -h 
+
+ 
